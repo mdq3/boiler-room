@@ -5,6 +5,7 @@ const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const distDir = path.resolve(__dirname, "dist", "client");
 
 module.exports = {
+  mode: "production",
   entry: "./src/client/index.ts",
   output: {
     filename: "bundle.js",
